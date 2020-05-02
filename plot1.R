@@ -13,5 +13,5 @@ sub <- aggregate(x = NEI$Emissions, by = list(NEI$year), FUN = sum)
 
 ##Plotting to png Graphic Device
 png(filename = "plot1.png")
-plot(sub, type = "l", xlab = "Years", ylab = "Emissions", main  = "Emissions over the Years")
+print({plot(sub, type = "l", xlab = "Years", ylab = "Emissions", main  = "Emissions over the Years")})
 dev.off()
